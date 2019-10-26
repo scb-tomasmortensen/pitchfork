@@ -48,7 +48,7 @@ namespace pitchfork.webapi
             app.UseMvc();
             app.UseSpa(spa =>
             {
-                spa.Options.SourcePath = Path.Join(env.ContentRootPath, "pitchfork.web");
+                spa.Options.SourcePath = Path.Join(@"D:\Development\pitchfork\pitchfork.web");
 
                 if (env.IsDevelopment())
                 {
