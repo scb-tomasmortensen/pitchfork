@@ -51,7 +51,7 @@ class SearchResult extends React.Component {
         return (
             <div className="searchresult">
                 <center>HIERARCHICAL RESULT</center>
-                <table>
+                <table class="center">
                     <thead>
                         <tr>
                             <th>SNI 2007-kod</th>
@@ -76,7 +76,7 @@ class SearchResult extends React.Component {
 
                 <center>SEARCH RESULT</center><br />
                 <center>You got XX hit(s) when searching: <b>odling friland</b></center>
-                <table>
+                <table class="center">
                     <thead>
                         <tr>
                             <th>SNI 2007</th>

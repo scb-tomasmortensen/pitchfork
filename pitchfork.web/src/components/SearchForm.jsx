@@ -10,7 +10,7 @@ class SearchForm extends React.Component {
         }
     };
 
-    handleSubmit = async (e: any) => {}
+    handleSubmit = async () => {}
 
     render() {
         return(
