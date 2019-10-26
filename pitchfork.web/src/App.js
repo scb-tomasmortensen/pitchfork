@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import SearchForm from './components/SearchForm';
+import SearchResult from './components/SearchResult';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          IT WORX!!!
-          https://www.codeproject.com/Articles/5248030/Global-Weather-React-App-with-ASP-NET-Core-3-0-Par
-
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="wrapper">
+      <header className="header">
       </header>
+      
+      <article className="main">
+        <SearchForm />
+        <SearchResult />
+      </article>
+
+      <aside className="aside aside-1">
+        <p>P i T C H F O R K</p>
+      </aside>
+      
+      <footer className="footer">
+        &copy;Copyright 2019, Tomas Mortensen
+      </footer>
     </div>
   );
 }

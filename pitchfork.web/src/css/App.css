@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* We tell all items to be 100% width, via flex-basis */
+.wrapper > * {
+  flex: 1 100%;
+}
+
+ /* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .main { 
+    color: rgb(204, 198, 198);
+    text-align: center;
+  }
+
+  .aside { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(12px + 2vmin);
+    color: rgb(204, 198, 198);
+  }
+
+  .footer  { 
+    order: 3; 
+    color: rgb(204, 198, 198);
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .main { 
+    flex: 2 0px; 
+    color: rgb(204, 198, 198);
+  }
+  .aside-1 { 
+    order: 1; 
+    font-size: calc(12px + 2vmin);
+    color: rgb(204, 198, 198);
+  }
+  .main    { 
+    order: 2; 
+  }
+  .footer  { 
+    order: 3; 
+    color: rgb(204, 198, 198);
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+.searchresult {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  margin: 4px;
+}
+
+th {
+  border: 1px dashed #ddd;
+  padding: 4px;
+} 
+
+td {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px dashed #ddd;
+  border-right: 1px dashed #ddd;
+  padding: 4px;
+}
