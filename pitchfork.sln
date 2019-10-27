@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pitchfork.webapi", "pitchfork.webapi\pitchfork.webapi.csproj", "{DDCCB5F5-57BB-49DF-81CA-936AE98F4874}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pitchfork.webapi", "pitchfork.webapi\pitchfork.webapi.csproj", "{DDCCB5F5-57BB-49DF-81CA-936AE98F4874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pitchfork.persistance", "pitchfork.persistance\pitchfork.persistance.csproj", "{091089B1-E863-4E28-8F4B-2956065EE90E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DDCCB5F5-57BB-49DF-81CA-936AE98F4874}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDCCB5F5-57BB-49DF-81CA-936AE98F4874}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDCCB5F5-57BB-49DF-81CA-936AE98F4874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{091089B1-E863-4E28-8F4B-2956065EE90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091089B1-E863-4E28-8F4B-2956065EE90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091089B1-E863-4E28-8F4B-2956065EE90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091089B1-E863-4E28-8F4B-2956065EE90E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
