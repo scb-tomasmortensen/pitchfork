@@ -10,15 +10,15 @@ class SearchForm extends React.Component {
         }
     };
 
-    handleSubmit = async () => {}
+    handleSubmit = async () => { }
 
     render() {
-        return(
+        return (
             <form onSubmit={this.handleSubmit}>
-            <div>
-                <input id="criteria" type="text" name="criteria" placeholder="  Enter search word...  " />
-                <input variant="primary" type="submit" value="Search"/>
-            </div>
+                <div>
+                    <input aria-label="searchbox" id="criteria" type="text" name="criteria" placeholder="  Enter search word...  " />
+                    <input variant="primary" type="submit" value="Search" />
+                </div>
             </form>
         );
     }
@@ -30,15 +30,6 @@ class SearchForm extends React.Component {
         } catch (error) {
             console.log(error);
             return [];
-        }
-    }
-
-    async componentDidMount() {
-        try {
-            const searchResult = await this.performSearch();
-            await this.setStateAsync({ searchResult: searchResult });
-        } catch (error) {
-            console.log(error);
         }
     }
 }
