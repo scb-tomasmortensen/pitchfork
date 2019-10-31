@@ -7,7 +7,7 @@ class SearchResult extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://localhost:44375/api/sni/departments')
+        fetch('https://localhost:44388/api/sni/departments')
             .then(res => res.json())
             .then((data) => {
                 this.setState({ departments: data })

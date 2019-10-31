@@ -15,7 +15,7 @@ namespace pitchfork.webapi
             {
                 options.AddPolicy("AllowLocalAccess",
                     policy => policy
-                        .WithOrigins("https://localhost:44305")
+                        .WithOrigins("https://localhost:44312")
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials()

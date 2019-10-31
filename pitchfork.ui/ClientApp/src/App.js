@@ -19,7 +19,7 @@ function App() {
       </aside>
       
       <footer className="footer">
-        &copy;Copyright 2019, Tomas Mortensen
+        Copyright &copy; 2019 Tomas Mortensen, All rights reserved
       </footer>
     </div>
   );
